@@ -1,0 +1,182 @@
+import { WallWithContributions } from './types';
+
+export const SEED_WALLS: WallWithContributions[] = [
+  {
+    id: "wall-newspaper-demo",
+    title: "The Arthur Daily: Arthur's 80th Jubilee Edition!",
+    recipient_name: "Arthur Pendelton",
+    occasion_type: "birthday",
+    theme: "newspaper",
+    share_slug: "arthur-80th-birthday",
+    cover_photo_url: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1000&q=80",
+    organizer_name: "Emily & David",
+    organizer_message: "Dad, 80 years of legendary wisdom, hilarious jokes, and unconditional warmth. Here is our family tribute to you!",
+    reveal_date: null,
+    created_at: new Date(Date.now() - 86400000 * 3).toISOString(),
+    description: "An extraordinary chronicle celebrating 80 legendary years of Arthur Pendelton — loving father, master gardener, and grand storytelling champion.",
+    contributions: [
+      {
+        id: "c-np-1",
+        wall_id: "wall-newspaper-demo",
+        contributor_name: "Emily (Daughter)",
+        message: "Dad, thank you for teaching me how to ride a bike, how to never give up on a puzzle, and that pancakes taste better shaped like dinosaurs. Happy 80th!",
+        photo_url: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80",
+        created_at: new Date(Date.now() - 86400000 * 2).toISOString(),
+        highlight: true,
+      },
+      {
+        id: "c-np-2",
+        wall_id: "wall-newspaper-demo",
+        contributor_name: "Liam & Sophia (Grandkids)",
+        message: "Grandpa! You make the funniest bird calls and make the best hot cocoa. We drew you this card and we love you to the moon and back!",
+        photo_url: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=800&q=80",
+        created_at: new Date(Date.now() - 86400000 * 1.5).toISOString(),
+      },
+      {
+        id: "c-np-3",
+        wall_id: "wall-newspaper-demo",
+        contributor_name: "Captain Bob (Lifelong Pal)",
+        message: "Sixty years since we met in basic training, and you haven't lost an ounce of that dry humor. May the wind be forever at your back, old friend.",
+        photo_url: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+        created_at: new Date(Date.now() - 86400000 * 1.2).toISOString(),
+      },
+      {
+        id: "c-np-4",
+        wall_id: "wall-newspaper-demo",
+        contributor_name: "Martha (Sister)",
+        message: "Remember when we tried baking bread in 1958 and nearly burnt the shed down? Here's to 80 years of misadventures and unconditional love!",
+        photo_url: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+        created_at: new Date(Date.now() - 86400000 * 0.8).toISOString(),
+      },
+      {
+        id: "c-np-5",
+        wall_id: "wall-newspaper-demo",
+        contributor_name: "The Neighborhood Garden Club",
+        message: "To our chief tomato consultant and chief rose whisperer — our community plot wouldn't bloom half as bright without you. Cheers Arthur!",
+        photo_url: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+        created_at: new Date(Date.now() - 86400000 * 0.5).toISOString(),
+      }
+    ]
+  },
+  {
+    id: "wall-scratch-demo",
+    title: "Sarah's Epic Farewell & New Chapter!",
+    recipient_name: "Sarah Jenkins",
+    occasion_type: "farewell",
+    theme: "scratch_card",
+    share_slug: "sarah-farewell-2025",
+    cover_photo_url: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1000&q=80",
+    organizer_name: "Design & Product Team",
+    organizer_message: "Sarah, you've inspired all of us with your brilliance and laughter. Have the adventure of a lifetime in London!",
+    reveal_date: null,
+    created_at: new Date(Date.now() - 86400000 * 2).toISOString(),
+    description: "Scratch each card to uncover our favorite memories, inside jokes, and best wishes as you embark on your London adventure!",
+    contributions: [
+      {
+        id: "c-sc-1",
+        wall_id: "wall-scratch-demo",
+        contributor_name: "Alex (Engineering Lead)",
+        message: "Who will translate Figma specs into sanity for us now?! You are an incredible designer and even better human. London won't know what hit it!",
+        photo_url: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
+        created_at: new Date(Date.now() - 86400000 * 1.8).toISOString(),
+        highlight: true,
+      },
+      {
+        id: "c-sc-2",
+        wall_id: "wall-scratch-demo",
+        contributor_name: "Maya & The Coffee Crew",
+        message: "Remember the 3pm cold brew runs and surviving the Q3 launch? You kept our spirits high every single sprint. We will miss you tremendously!",
+        photo_url: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&q=80",
+        created_at: new Date(Date.now() - 86400000 * 1.3).toISOString(),
+      },
+      {
+        id: "c-sc-3",
+        wall_id: "wall-scratch-demo",
+        contributor_name: "Jordan (Product Partner)",
+        message: "From wireframes to production triumphs. Thank you for always pushing the bar. Keep creating magic in the UK!",
+        photo_url: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80",
+        created_at: new Date(Date.now() - 86400000 * 0.9).toISOString(),
+      },
+      {
+        id: "c-sc-4",
+        wall_id: "wall-scratch-demo",
+        contributor_name: "Priya (UX Research)",
+        message: "No one synthesizes user test teardowns with as much flair and humor. Can't wait to visit you across the pond!",
+        photo_url: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+        created_at: new Date(Date.now() - 86400000 * 0.4).toISOString(),
+      }
+    ]
+  },
+  {
+    id: "wall-clothesline-demo",
+    title: "Maya's Graduating Memories on the Line",
+    recipient_name: "Maya Chen",
+    occasion_type: "appreciation",
+    theme: "clothesline",
+    share_slug: "maya-graduation-memories",
+    cover_photo_url: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80",
+    organizer_name: "Campus Roommates",
+    organizer_message: "4 years, 1,000 all-nighters, and endless laughter. Proud of you Maya!",
+    reveal_date: null,
+    created_at: new Date(Date.now() - 86400000 * 1.5).toISOString(),
+    description: "Swaying polaroids with handwritten memories clipped on fairy lights!",
+    contributions: [
+      {
+        id: "c-cl-1",
+        wall_id: "wall-clothesline-demo",
+        contributor_name: "Chloe & Sam",
+        message: "From freshman orientation to graduation stage! Couldn't have survived organic chem without you!",
+        photo_url: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80",
+        created_at: new Date(Date.now() - 86400000 * 1.2).toISOString(),
+      },
+      {
+        id: "c-cl-2",
+        wall_id: "wall-clothesline-demo",
+        contributor_name: "Professor Vance",
+        message: "One of the most curious and brilliant students I've had the pleasure to teach. Go change the world!",
+        photo_url: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+        created_at: new Date(Date.now() - 86400000 * 0.8).toISOString(),
+      },
+      {
+        id: "c-cl-3",
+        wall_id: "wall-clothesline-demo",
+        contributor_name: "Mom & Dad",
+        message: "Our sweetest girl, you have worked with so much heart. We love you infinitely!",
+        photo_url: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+        created_at: new Date(Date.now() - 86400000 * 0.5).toISOString(),
+      }
+    ]
+  },
+  {
+    id: "wall-lanterns-demo",
+    title: "Lanterns for Liam: Celebrating 10 Years Together",
+    recipient_name: "Liam & Noah",
+    occasion_type: "anniversary",
+    theme: "sky_lanterns",
+    share_slug: "liam-noah-anniversary",
+    cover_photo_url: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1000&q=80",
+    organizer_name: "The Wedding Party",
+    organizer_message: "A decade of unforgettable adventures, kindness, and boundless love.",
+    reveal_date: null,
+    created_at: new Date(Date.now() - 86400000 * 1.1).toISOString(),
+    description: "Warm floating lanterns carrying heartfelt wishes under the stars.",
+    contributions: [
+      {
+        id: "c-lt-1",
+        wall_id: "wall-lanterns-demo",
+        contributor_name: "Marcus & Elena",
+        message: "You two are the gold standard of partnership. Cheers to the next 50 years of love!",
+        photo_url: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80",
+        created_at: new Date(Date.now() - 86400000 * 0.9).toISOString(),
+      },
+      {
+        id: "c-lt-2",
+        wall_id: "wall-lanterns-demo",
+        contributor_name: "Aunt Beatrice",
+        message: "May your home always be filled with music, good food, and great joy.",
+        photo_url: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+        created_at: new Date(Date.now() - 86400000 * 0.3).toISOString(),
+      }
+    ]
+  }
+];
